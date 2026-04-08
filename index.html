@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Paulo Quilala | Full-Stack Developer & AI Automation Specialist</title>
+    <meta name="description"
+        content="Helping businesses automate workflows and build scalable web applications using .NET, Angular, Vue.js, and AI tools like n8n, Zapier, Make, and OpenAI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#d4d4d4] font-sans antialiased text-neutral-900" style="font-family: 'Inter', sans-serif;">
+    <main class="pt-4 md:pt-6 lg:pt-8 min-h-screen">
+
+        <!-- NAVBAR -->
+        <nav class="fixed top-0 left-0 right-0 z-50 px-6 pt-3 md:px-12 lg:px-20">
+            <div id="nav-container"
+                class="mx-auto max-w-6xl rounded-full border border-neutral-200 bg-white px-6 shadow-neutral-900/5 transition-all duration-300 md:px-8 shadow-sm">
+                <div class="flex h-12 items-center justify-between md:h-14">
+                    <a href="#home" class="text-sm font-semibold tracking-wide text-neutral-900">
+                        juan paulo<span class="text-neutral-400">.</span>
+                    </a>
+                    <div class="hidden items-center gap-6 md:flex">
+                        <a href="#home"
+                            class="text-sm font-medium text-neutral-900 transition-colors hover:text-neutral-500">Home</a>
+                        <a href="#about"
+                            class="text-sm font-medium text-neutral-500 transition-colors hover:text-neutral-900">About</a>
+                        <a href="#services"
+                            class="text-sm font-medium text-neutral-500 transition-colors hover:text-neutral-900">Services</a>
+                        <a href="#projects"
+                            class="text-sm font-medium text-neutral-500 transition-colors hover:text-neutral-900">Projects</a>
+                        <a href="#experience"
+                            class="text-sm font-medium text-neutral-500 transition-colors hover:text-neutral-900">Experience</a>
+                        <a href="#contact"
+                            class="text-sm font-medium text-neutral-500 transition-colors hover:text-neutral-900">Contact</a>
+                    </div>
+                    <div class="hidden items-center gap-5 md:flex">
+                        <a href="https://www.linkedin.com/in/jpquilala/" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn" class="text-neutral-500 transition-colors hover:text-neutral-900">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/alvagenesis" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub" class="text-neutral-500 transition-colors hover:text-neutral-900">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="mailto:juanpaulo.quilala@gmail.com" aria-label="Email"
+                            class="text-neutral-500 transition-colors hover:text-neutral-900">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                            </svg>
+                        </a>
+                    </div>
+                    <button id="mobile-menu-btn" aria-label="Open mobile menu" class="flex flex-col gap-1.5 md:hidden">
+                        <span id="line-1" class="block h-0.5 w-5 bg-neutral-900 transition-transform"></span>
+                        <span id="line-2" class="block h-0.5 w-5 bg-neutral-900 transition-opacity"></span>
+                        <span id="line-3" class="block h-0.5 w-5 bg-neutral-900 transition-transform"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden mx-auto mt-2 max-w-6xl rounded-2xl border border-neutral-200 bg-white px-6 py-6 shadow-lg shadow-neutral-900/5 md:hidden">
+                <div class="flex flex-col gap-4">
+                    <a href="#home" class="mobile-link text-sm font-medium text-neutral-900">Home</a>
+                    <a href="#about" class="mobile-link text-sm font-medium text-neutral-500">About</a>
+                    <a href="#services" class="mobile-link text-sm font-medium text-neutral-500">Services</a>
+                    <a href="#projects" class="mobile-link text-sm font-medium text-neutral-500">Projects</a>
+                    <a href="#experience" class="mobile-link text-sm font-medium text-neutral-500">Experience</a>
+                    <a href="#contact" class="mobile-link text-sm font-medium text-neutral-500">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section id="home"
+            class="relative z-[8] mx-6 mt-2 flex min-h-screen flex-col items-center justify-center rounded-t-2xl rounded-b-[3rem] bg-neutral-100 px-6 pb-20 pt-16 scroll-mt-16 md:mx-12 md:mt-2 md:rounded-[3rem] md:pb-28 lg:mx-20 lg:pb-32">
+            <div class="mb-8 h-28 w-28 overflow-hidden rounded-full bg-neutral-200 shadow-lg md:h-36 md:w-36">
+                <!-- Using Next.js public/images because we will move these files out later or host directly from Next.js root folder -->
+                <!-- Assuming we'll copy 'public' into root, so keep images/headshot.png -->
+                <img src="./images/headshot.png" alt="Juan Paulo Quilala" class="h-full w-full object-cover object-top"
+                    width="144" height="144" />
+            </div>
+            <h1
+                class="mb-6 max-w-3xl text-center text-4xl leading-tight font-light tracking-tight text-neutral-900 md:text-5xl lg:text-6xl lg:leading-tight">
+                Engineering <span class="font-bold">scalable applications</span> and <span class="font-bold">intelligent
+                    automations</span> that drive business growth.
+            </h1>
+            <p class="mb-10 max-w-xl text-center text-lg text-neutral-600 md:text-xl">
+                Full-stack software engineer specializing in modern web technologies, AI integrations, and
+                high-performance system architecture.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+                <a href="#contact"
+                    class="group flex items-center justify-center gap-2 rounded-full w-full sm:w-auto bg-neutral-900 px-8 py-3.5 text-sm font-medium text-white transition-colors hover:bg-neutral-800">
+                    Contact Me
+                    <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none"
+                        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+                <a href="https://drive.google.com/uc?export=download&id=1rprqA-S5ww9cye50ml9aau7U9tRxu4cp"
+                    class="group flex items-center justify-center gap-2 rounded-full w-full sm:w-auto border-2 border-neutral-200 bg-white px-8 py-3.5 text-sm font-medium text-neutral-900 transition-colors hover:border-neutral-900 hover:bg-neutral-50">
+                    Download CV
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="transition-transform group-hover:translate-y-0.5">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- BRAND BAR -->
+        <section
+            class="relative z-[7] -mt-24 mx-6 rounded-[3rem] bg-neutral-200 pt-24 pb-0 md:mx-12 md:pt-26 md:pb-2 lg:mx-20 lg:pt-28 lg:pb-4 overflow-hidden">
+            <div class="marquee-wrapper">
+                <style>
+                    /* Minimal style block just for the marquee */
+                    .marquee-wrapper {
+                        display: flex;
+                        overflow: hidden;
+                        position: relative;
+                        width: 100%;
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+                        mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+                    }
+
+                    .marquee-content {
+                        display: flex;
+                        align-items: center;
+                        flex-shrink: 0;
+                        gap: 5rem;
+                        padding-right: 5rem;
+                        animation: scroll-left 20s linear infinite;
+                    }
+
+                    .marquee-wrapper:hover .marquee-content {
+                        animation-play-state: paused;
+                    }
+
+                    .logo {
+                        white-space: nowrap;
+                        color: #a3a3a3;
+                        transition: color 0.3s ease, transform 0.3s ease;
+                        cursor: pointer;
+                    }
+
+                    .logo:hover {
+                        color: #171717;
+                        transform: scale(1.05);
+                    }
+
+                    @keyframes scroll-left {
+                        0% {
+                            transform: translateX(0);
+                        }
+
+                        100% {
+                            transform: translateX(-50%);
+                        }
+                    }
+                </style>
+                <div class="marquee-content">
+                    <span class="logo select-none font-bold uppercase tracking-[0.2em] text-lg lg:text-xl">ON
+                        Semi</span>
+                    <span class="logo select-none font-light tracking-[0.15em] text-2xl lg:text-3xl">Accenture</span>
+                    <span class="logo select-none font-semibold text-xl lg:text-2xl italic">Apply Financial</span>
+                    <span class="logo select-none font-black text-2xl lg:text-3xl tracking-tight">Tower T5</span>
+                    <span class="logo select-none font-medium tracking-wide text-xl lg:text-2xl">Business Care</span>
+                    <span class="logo select-none font-bold uppercase tracking-[0.2em] text-lg lg:text-xl">ON
+                        Semi</span>
+                    <span class="logo select-none font-light tracking-[0.15em] text-2xl lg:text-3xl">Accenture</span>
+                    <span class="logo select-none font-semibold text-xl lg:text-2xl italic">Apply Financial</span>
+                    <span class="logo select-none font-black text-2xl lg:text-3xl tracking-tight">Tower T5</span>
+                    <span class="logo select-none font-medium tracking-wide text-xl lg:text-2xl">Business Care</span>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about"
+            class="relative z-[6] -mt-24 mx-6 scroll-mt-20 rounded-[3rem] bg-neutral-100 py-32 md:mx-12 md:py-36 lg:mx-20 lg:py-40">
+            <div class="mx-auto max-w-6xl px-6 md:px-8">
+                <h2
+                    class="mb-16 max-w-xl text-3xl leading-snug font-light tracking-tight text-neutral-900 md:mb-20 md:text-4xl md:leading-snug">
+                    A bit <span class="font-bold">about me.</span>
+                </h2>
+                <div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
+                    <div>
+                        <p class="text-sm leading-relaxed text-neutral-500 md:text-base md:leading-relaxed">
+                            I help businesses automate workflows and build scalable web applications using .NET,
+                            Angular, Vue.js, and AI tools like n8n, Zapier, Make, and OpenAI. I focus on creating
+                            efficient, reliable systems that reduce manual work and improve productivity.
+                        </p>
+                    </div>
+                    <div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3"><svg class="mt-0.5 h-4 w-4 shrink-0 text-neutral-400"
+                                    fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg><span class="text-sm leading-relaxed text-neutral-500">Automate workflows using
+                                    n8n, Zapier, Make, and OpenAI</span></li>
+                            <li class="flex items-start gap-3"><svg class="mt-0.5 h-4 w-4 shrink-0 text-neutral-400"
+                                    fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg><span class="text-sm leading-relaxed text-neutral-500">Design and integrate REST
+                                    APIs for seamless system communication</span></li>
+                            <li class="flex items-start gap-3"><svg class="mt-0.5 h-4 w-4 shrink-0 text-neutral-400"
+                                    fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg><span class="text-sm leading-relaxed text-neutral-500">Build full-stack
+                                    applications (.NET, Angular, Vue.js, Node.js, Spring Boot)</span></li>
+                            <li class="flex items-start gap-3"><svg class="mt-0.5 h-4 w-4 shrink-0 text-neutral-400"
+                                    fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg><span class="text-sm leading-relaxed text-neutral-500">Analyze systems and provide
+                                    ongoing support for continuous improvement</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-16 border-t border-neutral-200 pt-12 md:mt-20">
+                    <p
+                        class="mx-auto max-w-2xl text-center text-base leading-relaxed font-light text-neutral-700 italic md:text-lg">
+                        &ldquo;My mission is simple &mdash; help clients work smarter by building intelligent,
+                        future-ready software that delivers real business value.&rdquo;
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services"
+            class="relative z-[5] -mt-24 mx-6 scroll-mt-20 rounded-[3rem] bg-neutral-200 py-32 md:mx-12 md:py-36 lg:mx-20 lg:py-40">
+            <div class="mx-auto max-w-6xl px-6 md:px-8">
+                <h2
+                    class="mx-auto mb-16 max-w-xl text-center text-3xl leading-snug font-light tracking-tight text-neutral-900 md:mb-20 md:text-4xl md:leading-snug">
+                    Collaborate with brands and agencies to create <span class="font-bold">impactful results.</span>
+                </h2>
+                <div class="relative mb-12 flex items-center justify-center">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-neutral-300"></div>
+                    </div>
+                    <span
+                        class="relative rounded-full bg-white px-4 py-1.5 text-xs font-medium text-neutral-500 shadow-sm">Services</span>
+                </div>
+                <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+
+                    <div class="flex flex-col">
+                        <div class="mb-4 text-neutral-700"><svg class="h-6 w-6" fill="none" stroke="currentColor"
+                                stroke-width="1.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                            </svg></div>
+                        <h3 class="mb-2 text-sm font-semibold text-neutral-900">Full-Stack Development</h3>
+                        <p class="text-sm leading-relaxed text-neutral-500">Building robust web applications with .NET,
+                            Angular, Vue.js, and modern frameworks for scalable, maintainable solutions.</p>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="mb-4 text-neutral-700"><svg class="h-6 w-6" fill="none" stroke="currentColor"
+                                stroke-width="1.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                            </svg></div>
+                        <h3 class="mb-2 text-sm font-semibold text-neutral-900">AI Automation</h3>
+                        <p class="text-sm leading-relaxed text-neutral-500">Streamlining business workflows using n8n,
+                            Zapier, Make, and OpenAI to reduce manual tasks and boost efficiency.</p>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="mb-4 text-neutral-700"><svg class="h-6 w-6" fill="none" stroke="currentColor"
+                                stroke-width="1.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                            </svg></div>
+                        <h3 class="mb-2 text-sm font-semibold text-neutral-900">API Development</h3>
+                        <p class="text-sm leading-relaxed text-neutral-500">Designing and developing RESTful APIs and
+                            integrations with Supabase, Airtable, and cloud services for seamless connectivity.</p>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="mb-4 text-neutral-700"><svg class="h-6 w-6" fill="none" stroke="currentColor"
+                                stroke-width="1.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L12 12.75 6.429 9.75m11.142 0l4.179 2.25L12 17.25 2.25 12l4.179-2.25m11.142 0l4.179 2.25-4.179 2.25M6.429 14.25L2.25 16.5 12 21.75l9.75-5.25-4.179-2.25m-11.142 0l5.571 3 5.571-3" />
+                            </svg></div>
+                        <h3 class="mb-2 text-sm font-semibold text-neutral-900">Systems Architecture</h3>
+                        <p class="text-sm leading-relaxed text-neutral-500">Architecting scalable systems with SQL
+                            Server, MongoDB, Oracle, and cloud platforms to support business growth.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects"
+            class="relative z-[4] -mt-24 mx-6 scroll-mt-20 rounded-[3rem] bg-neutral-100 py-32 md:mx-12 md:py-36 lg:mx-20 lg:py-40">
+            <div class="mx-auto max-w-6xl px-6 md:px-8">
+                <h2
+                    class="mb-16 max-w-xl text-3xl leading-snug font-light tracking-tight text-neutral-900 md:mb-20 md:text-4xl md:leading-snug">
+                    Selected <span class="font-bold">works.</span>
+                </h2>
+                <div class="space-y-32">
+
+                    <div
+                        class="group relative flex flex-col pt-12 md:pt-0 border-t border-neutral-300 md:border-transparent first:pt-0 first:border-transparent">
+                        <div class="flex flex-col mb-8">
+                            <h3 class="text-2xl md:text-3xl font-semibold text-neutral-900">01 &mdash; Hoops Booking App
+                            </h3>
+                            <div class="flex flex-wrap gap-2 mt-4 mb-8"><span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">Next.js</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">Tailwind
+                                    CSS</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">Supabase</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">n8n</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">Stripe
+                                    API</span>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                                <div>
+                                    <h4 class="text-xs font-bold tracking-widest uppercase text-neutral-400 mb-3 block">
+                                        The Problem</h4>
+                                    <p class="text-neutral-600 text-sm leading-relaxed">Local basketball court owners
+                                        struggled with double-bookings and manual reservation tracking via paper or
+                                        messaging apps.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-bold tracking-widest uppercase text-neutral-400 mb-3 block">
+                                        The Solution</h4>
+                                    <p class="text-neutral-600 text-sm leading-relaxed">Built a real-time reservation
+                                        engine using Next.js and Supabase that handles high-concurrency booking
+                                        requests.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-2">
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">Automation
+                                    Edge</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Integrated n8n workflows to
+                                    automatically send SMS confirmations and Google Calendar invites upon payment
+                                    success.</div>
+                            </div>
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">Impact
+                                </div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Reduced administrative scheduling
+                                    time by 60% and eliminated 100% of double-booking errors for court managers.</div>
+                            </div>
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">Key
+                                    Feature</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Dynamic pricing engine based on
+                                    peak hours and lighting requirements.</div>
+                            </div>
+
+                        </div>
+                        <div class="relative rounded-2xl overflow-hidden bg-white mt-8 border border-neutral-200">
+                            <div class="embla overflow-hidden relative">
+                                <div
+                                    class="embla__container flex p-4 md:p-8 space-x-4 cursor-grab active:cursor-grabbing">
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/bookingapp/Screenshot 2026-03-03 120526.png"
+                                            alt="Hoops Booking App screenshot 1"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/bookingapp/Screenshot 2026-03-03 120526.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/bookingapp/Screenshot 2026-03-03 120655.png"
+                                            alt="Hoops Booking App screenshot 2"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/bookingapp/Screenshot 2026-03-03 120655.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/bookingapp/Screenshot 2026-03-03 120720.png"
+                                            alt="Hoops Booking App screenshot 3"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/bookingapp/Screenshot 2026-03-03 120720.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/bookingapp/Screenshot 2026-03-03 120738.png"
+                                            alt="Hoops Booking App screenshot 4"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/bookingapp/Screenshot 2026-03-03 120738.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/bookingapp/localhost_5173_calendar(iPhone 14 Pro Max) (1).png"
+                                            alt="Hoops Booking App screenshot 5"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/bookingapp/localhost_5173_calendar(iPhone 14 Pro Max) (1).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/bookingapp/localhost_5173_calendar(iPhone 14 Pro Max) (2).png"
+                                            alt="Hoops Booking App screenshot 6"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/bookingapp/localhost_5173_calendar(iPhone 14 Pro Max) (2).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/bookingapp/localhost_5173_calendar(iPhone 14 Pro Max) (4).png"
+                                            alt="Hoops Booking App screenshot 7"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/bookingapp/localhost_5173_calendar(iPhone 14 Pro Max) (4).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/bookingapp/localhost_5173_login(iPhone 14 Pro Max).png"
+                                            alt="Hoops Booking App screenshot 8"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/bookingapp/localhost_5173_login(iPhone 14 Pro Max).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative flex flex-col pt-12 md:pt-0 border-t border-neutral-300 md:border-transparent first:pt-0 first:border-transparent">
+                        <div class="flex flex-col mb-8">
+                            <h3 class="text-2xl md:text-3xl font-semibold text-neutral-900">02 &mdash; GoGulong.ph</h3>
+                            <div class="flex flex-wrap gap-2 mt-4 mb-8"><span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">Vue.js</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">.NET
+                                    Core</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">SQL
+                                    Server</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">REST
+                                    APIs</span>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                                <div>
+                                    <h4 class="text-xs font-bold tracking-widest uppercase text-neutral-400 mb-3 block">
+                                        The Problem</h4>
+                                    <p class="text-neutral-600 text-sm leading-relaxed">Car owners faced a fragmented
+                                        market when trying to find specific tire brands and trusted local installation
+                                        shops.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-bold tracking-widest uppercase text-neutral-400 mb-3 block">
+                                        The Solution</h4>
+                                    <p class="text-neutral-600 text-sm leading-relaxed">Engineered a multi-vendor
+                                        marketplace using Vue.js that connects thousands of buyers with verified
+                                        automotive service centers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-2">
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">
+                                    Architecture</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Designed a complex search
+                                    algorithm that filters inventory by rim diameter, aspect ratio, and brand in
+                                    real-time.</div>
+                            </div>
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">Business
+                                    Value</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Scaled the platform to support
+                                    high-volume daily transactions and diverse product catalogs.</div>
+                            </div>
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">Key
+                                    Feature</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Geolocation-based shop finder to
+                                    minimize travel distance for customers.</div>
+                            </div>
+
+                        </div>
+                        <div class="relative rounded-2xl overflow-hidden bg-white mt-8 border border-neutral-200">
+                            <div class="embla overflow-hidden relative">
+                                <div
+                                    class="embla__container flex p-4 md:p-8 space-x-4 cursor-grab active:cursor-grabbing">
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/gogulong.ph/Screenshot 2026-03-03 090021.png"
+                                            alt="GoGulong.ph screenshot 1"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/gogulong.ph/Screenshot 2026-03-03 090021.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/gogulong.ph/Screenshot 2026-03-03 090150.png"
+                                            alt="GoGulong.ph screenshot 2"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/gogulong.ph/Screenshot 2026-03-03 090150.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/gogulong.ph/Screenshot 2026-03-03 090241.png"
+                                            alt="GoGulong.ph screenshot 3"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/gogulong.ph/Screenshot 2026-03-03 090241.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/gogulong.ph/Screenshot 2026-03-03 090330.png"
+                                            alt="GoGulong.ph screenshot 4"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/gogulong.ph/Screenshot 2026-03-03 090330.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/gogulong.ph/gogulong-1.png" alt="GoGulong.ph screenshot 5"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/gogulong.ph/gogulong-1.png" aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/gogulong.ph/gogulong-2.png" alt="GoGulong.ph screenshot 6"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/gogulong.ph/gogulong-2.png" aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/gogulong.ph/gogulong-3.png" alt="GoGulong.ph screenshot 7"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/gogulong.ph/gogulong-3.png" aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/gogulong.ph/gogulong-4.png" alt="GoGulong.ph screenshot 8"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/gogulong.ph/gogulong-4.png" aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative flex flex-col pt-12 md:pt-0 border-t border-neutral-300 md:border-transparent first:pt-0 first:border-transparent">
+                        <div class="flex flex-col mb-8">
+                            <h3 class="text-2xl md:text-3xl font-semibold text-neutral-900">03 &mdash; ImCool.ph</h3>
+                            <div class="flex flex-wrap gap-2 mt-4 mb-8"><span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">HTML</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">Vanilla
+                                    JS</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">Tailwind
+                                    CSS</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">n8n
+                                    Data Tables</span>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                                <div>
+                                    <h4 class="text-xs font-bold tracking-widest uppercase text-neutral-400 mb-3 block">
+                                        The Problem</h4>
+                                    <p class="text-neutral-600 text-sm leading-relaxed">A cooling and CCTV business
+                                        needed to modernize its digital presence to compete in the high-ticket B2B
+                                        service market.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-bold tracking-widest uppercase text-neutral-400 mb-3 block">
+                                        The Solution</h4>
+                                    <p class="text-neutral-600 text-sm leading-relaxed">Redesigned the corporate
+                                        platform with a "Modern AI SaaS" aesthetic to increase brand authority and
+                                        trust.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-2">
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">SEO
+                                    Strategy</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Implemented AI-focused SEO (AEO)
+                                    principles to ensure the business ranks for high-intent local service queries.</div>
+                            </div>
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">Conversion
+                                    Win</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Optimized lead capture forms that
+                                    sync directly with a custom CRM via automated pipelines.</div>
+                            </div>
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">Key
+                                    Feature</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Interactive service management
+                                    portal for real-time project tracking.</div>
+                            </div>
+
+                        </div>
+                        <div class="relative rounded-2xl overflow-hidden bg-white mt-8 border border-neutral-200">
+                            <div class="embla overflow-hidden relative">
+                                <div
+                                    class="embla__container flex p-4 md:p-8 space-x-4 cursor-grab active:cursor-grabbing">
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/imcoolph.com/Screenshot 2026-03-03 084925.png"
+                                            alt="ImCool.ph screenshot 1"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/imcoolph.com/Screenshot 2026-03-03 084925.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/imcoolph.com/Screenshot 2026-03-03 085003.png"
+                                            alt="ImCool.ph screenshot 2"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/imcoolph.com/Screenshot 2026-03-03 085003.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/imcoolph.com/Screenshot 2026-03-03 085804.png"
+                                            alt="ImCool.ph screenshot 3"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/imcoolph.com/Screenshot 2026-03-03 085804.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/imcoolph.com/Screenshot 2026-03-03 085851.png"
+                                            alt="ImCool.ph screenshot 4"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/imcoolph.com/Screenshot 2026-03-03 085851.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/imcoolph.com/www.imcoolph.com_(iPhone 14 Pro Max).png"
+                                            alt="ImCool.ph screenshot 5"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/imcoolph.com/www.imcoolph.com_(iPhone 14 Pro Max).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/imcoolph.com/www.imcoolph.com_(iPhone 14 Pro Max) (1).png"
+                                            alt="ImCool.ph screenshot 6"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/imcoolph.com/www.imcoolph.com_(iPhone 14 Pro Max) (1).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/imcoolph.com/www.imcoolph.com_(iPhone 14 Pro Max) (2).png"
+                                            alt="ImCool.ph screenshot 7"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/imcoolph.com/www.imcoolph.com_(iPhone 14 Pro Max) (2).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/imcoolph.com/www.imcoolph.com_(iPhone 14 Pro Max) (3).png"
+                                            alt="ImCool.ph screenshot 8"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/imcoolph.com/www.imcoolph.com_(iPhone 14 Pro Max) (3).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative flex flex-col pt-12 md:pt-0 border-t border-neutral-300 md:border-transparent first:pt-0 first:border-transparent">
+                        <div class="flex flex-col mb-8">
+                            <h3 class="text-2xl md:text-3xl font-semibold text-neutral-900">04 &mdash; MallPlanet.com
+                            </h3>
+                            <div class="flex flex-wrap gap-2 mt-4 mb-8"><span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">Angular</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">.NET</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">MongoDB</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">AWS</span>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                                <div>
+                                    <h4 class="text-xs font-bold tracking-widest uppercase text-neutral-400 mb-3 block">
+                                        The Problem</h4>
+                                    <p class="text-neutral-600 text-sm leading-relaxed">Large-scale mall directories
+                                        were often static, difficult to update, and lacked real-time store availability.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-bold tracking-widest uppercase text-neutral-400 mb-3 block">
+                                        The Solution</h4>
+                                    <p class="text-neutral-600 text-sm leading-relaxed">Developed a comprehensive,
+                                        data-rich mall directory and e-commerce gateway.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-2">
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">System
+                                    Design</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Architected a scalable database
+                                    schema to manage thousands of store profiles, promotions, and mall layouts.</div>
+                            </div>
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">UX Focus
+                                </div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Created a mobile-first responsive
+                                    interface allowing users to navigate complex mall environments on the go.</div>
+                            </div>
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">Key
+                                    Feature</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Unified search engine capable of
+                                    indexing stores across multiple geographical mall locations.</div>
+                            </div>
+
+                        </div>
+                        <div class="relative rounded-2xl overflow-hidden bg-white mt-8 border border-neutral-200">
+                            <div class="embla overflow-hidden relative">
+                                <div
+                                    class="embla__container flex p-4 md:p-8 space-x-4 cursor-grab active:cursor-grabbing">
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/mallplanet.com/Screenshot 2026-03-03 090544.png"
+                                            alt="MallPlanet.com screenshot 1"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/mallplanet.com/Screenshot 2026-03-03 090544.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/mallplanet.com/Screenshot 2026-03-03 090610.png"
+                                            alt="MallPlanet.com screenshot 2"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/mallplanet.com/Screenshot 2026-03-03 090610.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/mallplanet.com/Screenshot 2026-03-03 090657.png"
+                                            alt="MallPlanet.com screenshot 3"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/mallplanet.com/Screenshot 2026-03-03 090657.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/mallplanet.com/Screenshot 2026-03-03 090728.png"
+                                            alt="MallPlanet.com screenshot 4"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/mallplanet.com/Screenshot 2026-03-03 090728.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/mallplanet.com/www.mallplanet.com_malls(iPhone 14 Pro Max).png"
+                                            alt="MallPlanet.com screenshot 5"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/mallplanet.com/www.mallplanet.com_malls(iPhone 14 Pro Max).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/mallplanet.com/www.mallplanet.com_malls(iPhone 14 Pro Max) (1).png"
+                                            alt="MallPlanet.com screenshot 6"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/mallplanet.com/www.mallplanet.com_malls(iPhone 14 Pro Max) (1).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/mallplanet.com/www.mallplanet.com_malls(iPhone 14 Pro Max) (3).png"
+                                            alt="MallPlanet.com screenshot 7"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/mallplanet.com/www.mallplanet.com_malls(iPhone 14 Pro Max) (3).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/mallplanet.com/www.mallplanet.com__srsltid=AfmBOooCQSX-xZumB_nZUdDJWrDh6n1OHaAONTR8-J9_4VmkR0tzFvhJ(iPhone 14 Pro Max).png"
+                                            alt="MallPlanet.com screenshot 8"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/mallplanet.com/www.mallplanet.com__srsltid=AfmBOooCQSX-xZumB_nZUdDJWrDh6n1OHaAONTR8-J9_4VmkR0tzFvhJ(iPhone 14 Pro Max).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative flex flex-col pt-12 md:pt-0 border-t border-neutral-300 md:border-transparent first:pt-0 first:border-transparent">
+                        <div class="flex flex-col mb-8">
+                            <h3 class="text-2xl md:text-3xl font-semibold text-neutral-900">05 &mdash; OpenCourt.ph</h3>
+                            <div class="flex flex-wrap gap-2 mt-4 mb-8"><span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">Flutter</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">Supabase</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">n8n</span>
+                                <span
+                                    class="rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs font-medium text-neutral-600">OpenAI
+                                    API</span>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                                <div>
+                                    <h4 class="text-xs font-bold tracking-widest uppercase text-neutral-400 mb-3 block">
+                                        The Problem</h4>
+                                    <p class="text-neutral-600 text-sm leading-relaxed">Professional basketball camps
+                                        lacked a unified system to track player statistics, attendance, and coaching
+                                        evaluations.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-bold tracking-widest uppercase text-neutral-400 mb-3 block">
+                                        The Solution</h4>
+                                    <p class="text-neutral-600 text-sm leading-relaxed">Built a comprehensive Basketball
+                                        Camp Management System using Flutter and Supabase.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-2">
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">Data
+                                    Intelligence</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Integrated real-time stat-tracking
+                                    modules that generate automated performance reports for players and parents.</div>
+                            </div>
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">Workflow
+                                    Logic</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">Used n8n to automate camp
+                                    registration, waiver signing, and fee reminders.</div>
+                            </div>
+
+                            <div
+                                class="bg-white/50 rounded-2xl p-5 md:p-6 border border-neutral-200 transition-shadow hover:shadow-sm">
+                                <div class="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-2">Key
+                                    Feature</div>
+                                <div class="text-sm text-neutral-600 leading-relaxed">AI-generated player scouting
+                                    reports based on historical performance data.</div>
+                            </div>
+
+                        </div>
+                        <div class="relative rounded-2xl overflow-hidden bg-white mt-8 border border-neutral-200">
+                            <div class="embla overflow-hidden relative">
+                                <div
+                                    class="embla__container flex p-4 md:p-8 space-x-4 cursor-grab active:cursor-grabbing">
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/opencourt.ph/Screenshot 2026-03-03 121535.png"
+                                            alt="OpenCourt.ph screenshot 1"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/opencourt.ph/Screenshot 2026-03-03 121535.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/opencourt.ph/Screenshot 2026-03-03 121558.png"
+                                            alt="OpenCourt.ph screenshot 2"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/opencourt.ph/Screenshot 2026-03-03 121558.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/opencourt.ph/Screenshot 2026-03-03 121614.png"
+                                            alt="OpenCourt.ph screenshot 3"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/opencourt.ph/Screenshot 2026-03-03 121614.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/opencourt.ph/Screenshot 2026-03-03 121653.png"
+                                            alt="OpenCourt.ph screenshot 4"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/opencourt.ph/Screenshot 2026-03-03 121653.png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/opencourt.ph/opencourtph.vercel.app_dashboard(iPhone 14 Pro Max).png"
+                                            alt="OpenCourt.ph screenshot 5"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/opencourt.ph/opencourtph.vercel.app_dashboard(iPhone 14 Pro Max).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/opencourt.ph/opencourtph.vercel.app_dashboard(iPhone 14 Pro Max) (1).png"
+                                            alt="OpenCourt.ph screenshot 6"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/opencourt.ph/opencourtph.vercel.app_dashboard(iPhone 14 Pro Max) (1).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/opencourt.ph/opencourtph.vercel.app_dashboard(iPhone 14 Pro Max) (2).png"
+                                            alt="OpenCourt.ph screenshot 7"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/opencourt.ph/opencourtph.vercel.app_dashboard(iPhone 14 Pro Max) (2).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="embla__slide flex-[0_0_85%] md:flex-[0_0_60%] lg:flex-[0_0_45%] aspect-video relative rounded-xl overflow-hidden border border-neutral-100 bg-neutral-50 shadow-sm transition-transform duration-300 hover:shadow-md group/image">
+                                        <img src="./projects/opencourt.ph/opencourtph.vercel.app_dashboard(iPhone 14 Pro Max) (4).png"
+                                            alt="OpenCourt.ph screenshot 8"
+                                            class="w-full h-full object-contain transition-transform duration-500 group-hover/image:scale-105"
+                                            draggable="false" loading="lazy" width="800" height="450" />
+                                        <button
+                                            class="preview-btn absolute top-3 right-3 text-white bg-black/50 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 hover:bg-black/80 z-10 cursor-zoom-in"
+                                            data-src="./projects/opencourt.ph/opencourtph.vercel.app_dashboard(iPhone 14 Pro Max) (4).png"
+                                            aria-label="Enlarge image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <polyline points="9 21 3 21 3 15"></polyline>
+                                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience"
+            class="relative z-[3] -mt-24 mx-6 scroll-mt-20 rounded-[3rem] bg-neutral-200 py-32 md:mx-12 md:py-36 lg:mx-20 lg:py-40">
+            <div class="mx-auto max-w-6xl px-6 md:px-8">
+                <h2
+                    class="mb-16 max-w-xl text-3xl leading-snug font-light tracking-tight text-neutral-900 md:mb-20 md:text-4xl md:leading-snug">
+                    Where I've <span class="font-bold">worked.</span>
+                </h2>
+                <div class="relative">
+                    <div class="absolute left-0 top-0 bottom-0 hidden w-px bg-neutral-300 md:block"></div>
+                    <div class="space-y-10 md:space-y-0">
+
+                        <div class="relative md:pl-10 md:pb-12 last:md:pb-0">
+                            <div
+                                class="absolute left-0 top-1.5 hidden h-2 w-2 -translate-x-[3.5px] rounded-full bg-neutral-900 md:block">
+                            </div>
+                            <div class="flex flex-col gap-1 md:flex-row md:gap-8">
+                                <div class="shrink-0 pt-0.5 md:w-48">
+                                    <p class="text-xs text-neutral-400">Dec 2020 – Present</p>
+                                    <p class="text-xs text-neutral-400">5 yrs 3 mos</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-neutral-900">Freelance Software Engineer</h3>
+                                    <p class="text-sm text-neutral-500">Self-Employed</p>
+                                    <p class="text-xs text-neutral-400">Remote</p>
+                                    <ul class="mt-3 space-y-1.5">
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Develop full-stack web applications using .NET, Angular, and Vue.js.
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Create intelligent automation workflows with n8n, Zapier, and Make to improve business processes.
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Integrate OpenAI APIs for chatbots, data insights, and workflow intelligence.
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Deploy, maintain, and monitor applications in AWS and Docker environments.
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Work directly with international clients to design, build, and deliver scalable systems.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative md:pl-10 md:pb-12 last:md:pb-0">
+                            <div
+                                class="absolute left-0 top-1.5 hidden h-2 w-2 -translate-x-[3.5px] rounded-full bg-neutral-900 md:block">
+                            </div>
+                            <div class="flex flex-col gap-1 md:flex-row md:gap-8">
+                                <div class="shrink-0 pt-0.5 md:w-48">
+                                    <p class="text-xs text-neutral-400">Apr 2024 – Jul 2025</p>
+                                    <p class="text-xs text-neutral-400">1 yr 3 mos</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-neutral-900">Software Engineer</h3>
+                                    <p class="text-sm text-neutral-500">Business Care Technology</p>
+                                    <p class="text-xs text-neutral-400">Manila, Philippines · Remote</p>
+                                    <ul class="mt-3 space-y-1.5">
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Built full-stack web applications using .NET, Blazor, Angular, and C# APIs
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Designed and implemented reusable UI components, improving usability and consistency
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Developed and maintained RESTful APIs using Entity Framework and MS SQL Server
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Translated business requirements into scalable and maintainable technical solutions
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Performed end to end testing to ensure system reliability and performance
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Collaborated in an agile environment with stakeholders and team members
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Managed source control using GitHub (pull requests, reviews, versioning)
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Provided production support, troubleshooting, and bug resolution
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative md:pl-10 md:pb-12 last:md:pb-0">
+                            <div
+                                class="absolute left-0 top-1.5 hidden h-2 w-2 -translate-x-[3.5px] rounded-full bg-neutral-900 md:block">
+                            </div>
+                            <div class="flex flex-col gap-1 md:flex-row md:gap-8">
+                                <div class="shrink-0 pt-0.5 md:w-48">
+                                    <p class="text-xs text-neutral-400">Feb 2020 – Nov 2020</p>
+                                    <p class="text-xs text-neutral-400">10 mos</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-neutral-900">Software Engineer</h3>
+                                    <p class="text-sm text-neutral-500">Towert5</p>
+                                    <p class="text-xs text-neutral-400">Pasig City, Philippines · Remote</p>
+                                    <ul class="mt-3 space-y-1.5">
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Contributed to development of GoGulong.ph, an e-commerce platform serving the Philippine market
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Developed frontend features using Vue.js, Nuxt.js, and Vuex
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Built backend APIs using .NET with MongoDB integration
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Improved SEO and page performance using server-side rendering (Nuxt.js)
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Implemented features aligned with business and product requirements
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Performed bug fixing and system maintenance to improve stability
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative md:pl-10 md:pb-12 last:md:pb-0">
+                            <div
+                                class="absolute left-0 top-1.5 hidden h-2 w-2 -translate-x-[3.5px] rounded-full bg-neutral-900 md:block">
+                            </div>
+                            <div class="flex flex-col gap-1 md:flex-row md:gap-8">
+                                <div class="shrink-0 pt-0.5 md:w-48">
+                                    <p class="text-xs text-neutral-400">Aug 2017 – Aug 2019</p>
+                                    <p class="text-xs text-neutral-400">2 yrs 1 mo</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-neutral-900">Systems Engineer</h3>
+                                    <p class="text-sm text-neutral-500">Apply Financial</p>
+                                    <p class="text-xs text-neutral-400">Makati City, Philippines · Remote</p>
+                                    <ul class="mt-3 space-y-1.5">
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Developed REST APIs using Spring Boot and frontend features using Vue.js
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Worked on distributed systems with independent service ownership
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Translated customer requirements into technical specifications and implementations
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Conducted QA testing and iterative enhancements
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Investigated and resolved production issues
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative md:pl-10 md:pb-12 last:md:pb-0">
+                            <div
+                                class="absolute left-0 top-1.5 hidden h-2 w-2 -translate-x-[3.5px] rounded-full bg-neutral-900 md:block">
+                            </div>
+                            <div class="flex flex-col gap-1 md:flex-row md:gap-8">
+                                <div class="shrink-0 pt-0.5 md:w-48">
+                                    <p class="text-xs text-neutral-400">Apr 2010 – Aug 2017</p>
+                                    <p class="text-xs text-neutral-400">7 yrs 5 mos</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-neutral-900">Systems Analyst</h3>
+                                    <p class="text-sm text-neutral-500">ON Semiconductor Philippines Inc.</p>
+                                    <p class="text-xs text-neutral-400">Cavite, Philippines</p>
+                                    <ul class="mt-3 space-y-1.5">
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Developed and maintained enterprise web applications
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Translated business requirements into functional and technical specifications
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Supported and enhanced systems built in PHP and Spring
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Ensured application stability and ongoing system improvements
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative md:pl-10 md:pb-12 last:md:pb-0">
+                            <div
+                                class="absolute left-0 top-1.5 hidden h-2 w-2 -translate-x-[3.5px] rounded-full bg-neutral-900 md:block">
+                            </div>
+                            <div class="flex flex-col gap-1 md:flex-row md:gap-8">
+                                <div class="shrink-0 pt-0.5 md:w-48">
+                                    <p class="text-xs text-neutral-400">May 2008 – Apr 2010</p>
+                                    <p class="text-xs text-neutral-400">2 yrs</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-neutral-900">Software Engineer</h3>
+                                    <p class="text-sm text-neutral-500">Accenture</p>
+                                    <p class="text-xs text-neutral-400">Makati City, Philippines</p>
+                                    <ul class="mt-3 space-y-1.5">
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Implemented system enhancements based on functional specifications
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Developed Java-based components and web services
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Modified persistence layer to support new features
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative md:pl-10 md:pb-12 last:md:pb-0">
+                            <div
+                                class="absolute left-0 top-1.5 hidden h-2 w-2 -translate-x-[3.5px] rounded-full bg-neutral-900 md:block">
+                            </div>
+                            <div class="flex flex-col gap-1 md:flex-row md:gap-8">
+                                <div class="shrink-0 pt-0.5 md:w-48">
+                                    <p class="text-xs text-neutral-400">2005 – 2008</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-neutral-900">Earlier Career</h3>
+                                    <p class="text-sm text-neutral-500">Java Developer / Systems Engineer / QA Engineer / Data Center Operations</p>
+                                    <ul class="mt-3 space-y-1.5">
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Developed and supported production systems and internal tools
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Built reporting and traceability applications
+                                        </li>
+                                        <li class="flex items-start gap-2 text-xs leading-relaxed text-neutral-500">
+                                            <span class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-neutral-300"></span>Maintained servers, backups, and operational systems
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills"
+            class="relative z-[2] -mt-24 mx-6 scroll-mt-20 rounded-[3rem] bg-neutral-100 py-32 md:mx-12 md:py-36 lg:mx-20 lg:py-40">
+            <div class="mx-auto max-w-6xl px-6 md:px-8">
+                <h2
+                    class="mb-16 max-w-xl text-3xl leading-snug font-light tracking-tight text-neutral-900 md:mb-20 md:text-4xl md:leading-snug">
+                    Tools & <span class="font-bold">technologies.</span>
+                </h2>
+                <div class="flex flex-wrap gap-3">
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">AI
+                        Automation</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">n8n</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">GHL</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">Claude
+                        Code</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">Antigravity</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">API
+                        Development</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">Supabase</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">Airtable</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">C#
+                        .NET</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">Angular</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">Vue.js</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">Spring
+                        Framework</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">SQL
+                        Server</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">MongoDB</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">Oracle</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">Vercel</span>
+                    <span
+                        class="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 hover:text-neutral-900">GitHub</span>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="contact"
+            class="relative z-[8] -mt-24 mx-6 scroll-mt-20 rounded-[3rem] bg-neutral-200 py-24 md:mx-12 md:py-36 lg:mx-20 lg:py-40">
+            <div class="mx-auto max-w-6xl px-6 text-center md:px-8">
+                <svg class="mx-auto mb-8 h-12 w-12 text-neutral-400" fill="none" stroke="currentColor"
+                    stroke-width="1.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                </svg>
+                <h2
+                    class="mb-10 text-3xl leading-snug font-light tracking-tight text-neutral-900 md:text-4xl lg:text-5xl lg:leading-snug">
+                    Tell me about your <span class="font-bold">next project</span>
+                </h2>
+                <div
+                    class="mt-8 w-full max-w-4xl mx-auto rounded-3xl overflow-hidden border border-neutral-200 shadow-sm mb-10 bg-white">
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/juanpaulo-quilala/30min"
+                        style="min-width:320px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                        async></script>
+                    <!-- Calendly inline widget end -->
+                </div>
+                <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                    <a href="mailto:juanpaulo.quilala@gmail.com"
+                        class="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-8 py-3.5 text-sm font-medium text-white transition-colors hover:bg-neutral-800">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                        Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/jpquilala/" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 rounded-full border border-neutral-300 bg-white px-8 py-3.5 text-sm font-medium text-neutral-900 transition-colors hover:bg-neutral-50">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="mx-auto max-w-6xl px-6 py-8 md:px-8">
+            <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
+                <p class="text-xs text-neutral-400">
+                    &copy; 2026 All rights reserved.
+                </p>
+                <div class="flex items-center gap-1.5 text-xs text-neutral-400">
+                    <a href="https://www.linkedin.com/in/jpquilala/" target="_blank" rel="noopener noreferrer"
+                        class="transition-colors hover:text-neutral-900">LinkedIn</a>
+                    <span>/</span>
+                    <a href="https://github.com/alvagenesis" target="_blank" rel="noopener noreferrer"
+                        class="transition-colors hover:text-neutral-900">GitHub</a>
+                    <span>/</span>
+                    <a href="mailto:juanpaulo.quilala@gmail.com"
+                        class="transition-colors hover:text-neutral-900">Email</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Modal for Image Preview -->
+    <div id="image-modal"
+        class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/85 backdrop-blur-sm cursor-zoom-out p-4 md:p-8">
+        <button id="close-modal"
+            class="absolute top-4 right-4 md:top-8 md:right-8 text-neutral-400 hover:text-white bg-white/10 hover:bg-white/20 rounded-full p-2.5 transition-all cursor-pointer z-50"
+            aria-label="Close preview">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <div class="relative w-full h-full max-w-7xl flex items-center justify-center">
+            <img id="modal-image" src="" alt="Preview fullscreen" class="max-h-full max-w-full object-contain"
+                draggable="false" />
+        </div>
+    </div>
+
+    <!-- Embla Carousel CDN -->
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
